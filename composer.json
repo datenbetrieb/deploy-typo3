@@ -1,0 +1,34 @@
+{
+  "name": "datenbetrieb/deployer-typo3",
+  "description": "TYPO3 CMS Distribution with support for deployphp",
+  "type": "Project",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org/"
+    }
+  ],
+  "config": {
+    "secure-http": false
+  },
+  "require": {
+    "typo3/cms": "~7.6.0",
+    "helhum/realurl": "^2.1",
+    "typo3-ter/typo3-console": "^2.0",
+    "deployer/deployer": "^3.2.0",
+    "deployphp/recipes": "^3.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+    }
+  },
+  "extra": {
+    "helhum/typo3-console": {
+      "install-binary": false
+    },
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": "Web/"
+    }
+  }
+}
