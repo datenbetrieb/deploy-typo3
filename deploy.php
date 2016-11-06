@@ -5,6 +5,11 @@
  *  - basend on rsync strategy
  *  - uses upstream recipes from deployer
  *
+ *   !!!! WARNING !!!!
+ *     composer dependencies must be resolved before running this script
+ *     because we include deployer via composer dependency as well
+ *   !!!! WARNING !!!!
+ *
 **/
 include 'vendor/deployer/deployer/recipe/common.php';
 include 'vendor/deployphp/recipes/recipes/rsync.php';
@@ -93,7 +98,7 @@ task('cms:cache_warmup', function() {
 task('deploy', [
     'deploy:prepare',
     'deploy:release',
-    'deploy:vendors',
+    //'deploy:vendors', as we pull deployer via composer we must run composer ourselves BEFORE running this script
     'rsync:warmup',
     'rsync',
     'deploy:shared',
