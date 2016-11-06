@@ -1,0 +1,16 @@
+TYPO3 CMS with deploy support
+================================
+
+Quick-Start
+--------------------------------
+
+    composer install
+    export DEPLOYER_HOST=<DEIN HOST> DEPLOYER_USER=<DEIN USER> DEPLOYER_PORT=22 DEPLOYER_DESTINATION=</pfad/auf/server>
+    dep
+
+
+please fork and adapt to your needs
+
+Thx for an awesome #T3CRR16 at Unperfekthaus in Essen
+PeterN
+2016-11-06
