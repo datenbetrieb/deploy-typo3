@@ -6,7 +6,7 @@ Quick-Start
 
     composer install
     export DEPLOYER_HOST=<DEIN HOST> DEPLOYER_USER=<DEIN USER> DEPLOYER_PORT=22 DEPLOYER_DESTINATION=</pfad/auf/server>
-    dep
+    ./vendor/bin/dep deploy
 
 
 please fork and adapt to your needs
