@@ -14,7 +14,7 @@
   "require": {
     "typo3/cms": "~7.6.0",
     "helhum/realurl": "^2.1",
-    "typo3-ter/typo3-console": "^2.0",
+    "typo3-ter/typo3-console": "^3.0",
     "deployer/deployer": "^3.2.0",
     "deployphp/recipes": "^3.1.0"
   },
