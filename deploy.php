@@ -17,13 +17,13 @@ include 'vendor/deployphp/recipes/recipes/rsync.php';
 set('keep_releases', 5);
 
 set('shared_dirs', [
-    'Web/fileadmin',
-    'Web/uploads',
-    'Web/typo3temp'
+    'web/fileadmin',
+    'web/uploads',
+    'web/typo3temp'
 ]);
 
 set('shared_files', [
-    'Web/typo3conf/HostConfiguration.php',
+    'web/typo3conf/HostConfiguration.php',
 ]);
 
 set('rsync', [
@@ -43,7 +43,7 @@ set('rsync', [
     ],
     'exclude-file' => false,
     'include' => [
-        '/Web',
+        '/web',
         '/vendor'
     ],
     'include-file' => false,
@@ -70,7 +70,7 @@ server('yourserver', 'yourserver.domain.tld', '22')
 env('rsync_src', __DIR__);
 env('rsync_dest','{{release_path}}');
 
-set('typo3_console', "cd {{deploy_path}}/current/Web/ && typo3conf/ext/typo3_console/Scripts/typo3cms");
+set('typo3_console', "cd {{deploy_path}}/current/web/ && typo3conf/ext/typo3_console/Scripts/typo3cms");
 
 task('cms:cache_flush', function() {
     $typo3_console = get('typo3_console');
