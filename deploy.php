@@ -7,7 +7,7 @@
  *
  *   !!!! WARNING !!!!
  *     composer dependencies must be resolved before running this script
- *     because we include deployer via composer dependency as well
+ *     because we include deployer via composer dependency
  *   !!!! WARNING !!!!
  *
 **/
