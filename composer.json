@@ -12,11 +12,11 @@
     "secure-http": false
   },
   "require": {
-    "typo3/cms": "~7.6.0",
+    "typo3/cms": "^8.0",
     "helhum/realurl": "^2.1",
-    "typo3-ter/typo3-console": "^3.0",
-    "deployer/deployer": "^3.2.0",
-    "deployphp/recipes": "^3.1.0"
+    "helhum/typo3-console": "^4.0",
+    "deployer/deployer": "^3.3",
+    "deployphp/recipes": "^3.1"
   },
   "autoload": {
     "psr-4": {
@@ -24,7 +24,8 @@
   },
   "extra": {
     "helhum/typo3-console": {
-      "install-binary": false
+      "install-binary": false,
+      "install-extension-dummy": false
     },
     "typo3/cms": {
       "cms-package-dir": "{$vendor-dir}/typo3/cms",
