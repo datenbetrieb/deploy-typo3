@@ -11,6 +11,12 @@ Quick-Start
 
 please fork and adapt to your needs
 
+Branches
+--------------------------------
+
+master <=> bleeding edge (8.x)
+7.x-lts <=> TYPO3 CMS 7 LTS release
+
 Thx for an awesome #T3CRR16 at Unperfekthaus in Essen
 PeterN
 2016-11-06
